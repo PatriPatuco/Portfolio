@@ -11,7 +11,7 @@ function App() {
       <Work />
       <About />
       <Contact />
-
+      <div className="noise"></div>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import patri from "../images/profile-picture.png"
 function About() {
   return (
     <section className="about">
-      <aside className="about__aside menu-left">About</aside>
+      <aside className="about__aside menu-right">About</aside>
       <img src={patri} alt="Patricia Becerra portrait" className="about__img"/>
       <p className="about__resume regular-text">
         Hey! I'm Patricia, passionate about graphic design and web development.

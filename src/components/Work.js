@@ -1,7 +1,10 @@
 function Work() {
   return (
     <section className="work">
-      <aside className="work__aside menu-right">Work</aside>
+      <aside className="work__aside menu-left">
+        <div className="menu-line"></div>
+        <p>Work</p>
+      </aside>
       <article className="work__project">
         <h2 className="work__project--title">Harry Potter wiki</h2>
         <p className="work__project--languages">React - SCSS - HTML - HP Api</p>

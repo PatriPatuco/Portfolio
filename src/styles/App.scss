@@ -1,45 +1,43 @@
-/* font-family: 'Big Shoulders Display', cursive;
-font-family: 'VT323', monospace;
- */
+@import "./core/reset";
+@import "./core/variables";
+@import "./core/animations";
 
- 
-.App {
-  text-align: center;
+@import "./partials/home";
+@import "./partials/work";
+@import "./partials/about";
+@import "./partials/contact";
+
+.noise {
+    position: fixed;
+    z-index: 9999;
+    top: -300%;
+    left: -150%;
+    height: 600%;
+    width: 600%;
+    animation: noise 5s steps(5) infinite;
+    background-image: url(../images/noise.png);
+    opacity: 0.15;
+     pointer-events: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu-left {
+    font-family: $regular;
+    font-size: 3.2rem;
+    display: flex;
+    align-items: center;
+    color: $lightie;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu-right {
+    font-family: $regular;
+    font-size: 3.2rem;
+    display: flex;
+    align-items: center;
+    color: $darkie;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.menu-line{
+    width: 100px;
+    height: 1px;
+    background-color: $lightie ;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-

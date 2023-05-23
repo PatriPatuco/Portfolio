@@ -1,0 +1,40 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+  color: $darkie;
+  height: 100vh;
+  background-color: $lightie;
+
+  &__title {
+    font-family: $titles;
+    font-size: 5.6rem;
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  &__subtitle {
+    font-family: $regular;
+    font-size: 3.2rem;
+    text-align: center;
+    width: 55%;
+  }
+
+  &__nav--menu {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+
+    &--item {
+        font-family: $titles;
+        font-size: 3.2rem;
+        padding: 0 0.3rem;
+
+        &--link {
+            text-decoration: none;
+            color: $darkie;
+        }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.contact {
+  padding: 2.5rem 0 6rem 0;
+  background-color: $darkie;
+  color: $lightie;
+
+  &__aside {
+    padding-bottom: 4rem;
+  }
+
+  &__info {
+    padding: 0 6rem;
+
+    &--title {
+      font-family: $titles;
+      font-size: 6rem;
+      padding-bottom: 4rem;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    & a {
+      color: $lightie;
+      font-size: 1.4rem;
+      font-family: $regular;
+      text-decoration: none;
+    }
+
+    .fa-brands, .fa-solid {
+        font-size: 2rem;
+        padding: 2rem 0 0.4rem 0;
+    }
+  }
+}

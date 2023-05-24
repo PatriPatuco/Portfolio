@@ -18,7 +18,7 @@
     padding: 0 6rem;
 
     &--img {
-      height: 24rem;
+      size: 24rem;
       padding-bottom: 3rem;
     }
   }
@@ -29,7 +29,7 @@
     padding: 0 6rem;
 
     &--title {
-        padding-top: 1rem;
+      padding-top: 1rem;
     }
   }
 
@@ -51,7 +51,7 @@
     }
 
     .adalab {
-        border-right: 1px $darkie solid;
+      border-right: 1px $darkie solid;
     }
   }
 
@@ -66,13 +66,12 @@
     font-size: 2rem;
     font-family: $regular;
     border-radius: 0.5rem;
-    cursor:pointer;
+    cursor: pointer;
 
     .fa-solid {
-        color: $lightie;
-        font-size: 1.5rem;
-        padding-right: 1.5rem;
+      color: $lightie;
+      font-size: 1.5rem;
+      padding-right: 1.5rem;
     }
   }
-
 }

@@ -1,0 +1,78 @@
+.about {
+  padding: 2.5rem 0;
+  background-color: $white;
+  color: $darkie;
+
+  &__aside {
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: flex-end;
+
+    .menu-line {
+      background-color: $darkie;
+    }
+  }
+  &__resume {
+    display: flex;
+    flex-direction: column;
+    padding: 0 6rem;
+
+    &--img {
+      height: 24rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  &__info {
+    font-family: $regular;
+    font-size: 2rem;
+    padding: 0 6rem;
+
+    &--title {
+        padding-top: 1rem;
+    }
+  }
+
+  &__companies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &--logo {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-top: 0.5rem;
+    }
+    .kaiju {
+      border-right: 1px $darkie solid;
+      border-left: 1px $darkie solid;
+      padding: 0 1.5rem 0 1.5rem;
+    }
+
+    .adalab {
+        border-right: 1px $darkie solid;
+    }
+  }
+
+  &__button {
+    margin: 4rem auto;
+    padding: 0.6rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $darkie;
+    color: $lightie;
+    font-size: 2rem;
+    font-family: $regular;
+    border-radius: 0.5rem;
+    cursor:pointer;
+
+    .fa-solid {
+        color: $lightie;
+        font-size: 1.5rem;
+        padding-right: 1.5rem;
+    }
+  }
+
+}

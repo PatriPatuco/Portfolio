@@ -1,36 +1,36 @@
-.work{
-    padding: 2.5rem 0;
-    height: 100vh;
-    background-color: $darkie;
-    color: $lightie;
+.work {
+  padding: 2.5rem 0;
+  height: 100vh;
+  background-color: $darkie;
+  color: $lightie;
 
-    &__aside {
-        padding-bottom: 4rem;
+  &__aside {
+    padding-bottom: 4rem;
+  }
+
+  &__project {
+    padding: 0 4rem;
+
+    &--title {
+      font-family: $titles;
+      font-size: 4rem;
+      padding-bottom: 0.7rem;
     }
 
-    &__project{
-        padding: 0 4rem;
-
-        &--title {
-            font-family: $titles;
-            font-size: 4rem;
-            padding-bottom: 0.7rem;
-        }
-
-        &--languages{
-            font-family: $regular;
-            font-size: 2rem;
-            padding-bottom: 3.5rem;
-        }
-
-        &--description{
-            display: none;
-        }
-
-        &show-info {
-            font-family: $regular;
-            font-size: 1.6rem;
-            padding-bottom: 3rem;
-        }
-        }
+    &--languages {
+      font-family: $regular;
+      font-size: 2rem;
+      padding-bottom: 3.5rem;
     }
+
+    &--info {
+      display: none;
+    }
+
+    &show-info {
+      font-family: $regular;
+      font-size: 1.6rem;
+      padding-bottom: 3rem;
+    }
+  }
+}

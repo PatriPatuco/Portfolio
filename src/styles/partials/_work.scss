@@ -11,6 +11,11 @@
   &__project {
     padding: 0 4rem;
 
+    &--link {
+        text-decoration: none;
+        color: $lightie;
+    }
+
     &--title {
       font-family: $titles;
       font-size: 4rem;
@@ -27,7 +32,7 @@
       display: none;
     }
 
-    &show-info {
+    .show-info {
       font-family: $regular;
       font-size: 1.6rem;
       padding-bottom: 3rem;

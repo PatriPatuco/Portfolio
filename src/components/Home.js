@@ -7,13 +7,13 @@ return (
       <nav className="home__nav">
         <ul className="home__nav--menu">
           <li className="home__nav--menu--item">
-            <a className="home__nav--menu--item--link" href="www.google.es">WORK</a> -
+            <a className="home__nav--menu--item--link" href="#work">WORK</a> -
           </li>
           <li className="home__nav--menu--item">
-            <a className="home__nav--menu--item--link" href="www.google.es">ABOUT</a> - 
+            <a className="home__nav--menu--item--link" href="#about">ABOUT</a> - 
           </li>
           <li className="home__nav--menu--item">
-            <a className="home__nav--menu--item--link" href="www.google.es">CONTACT</a>
+            <a className="home__nav--menu--item--link" href="#contact">CONTACT</a>
           </li>
         </ul>
       </nav>

@@ -5,7 +5,8 @@
   justify-content: center;
   color: $darkie;
   height: 100vh;
-  background-color: $lightie;
+  background-image: url("../../images/hhholographic.webp");
+  background-size: cover;
 
   &__title {
     font-family: $titles;

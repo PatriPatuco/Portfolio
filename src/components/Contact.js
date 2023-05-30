@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <aside className="contact__aside menu-left">
         <div className="menu-line"></div>
         <p>Contact</p>

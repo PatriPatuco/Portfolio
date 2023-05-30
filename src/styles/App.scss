@@ -7,6 +7,13 @@
 @import "./partials/about";
 @import "./partials/contact";
 
+
+.app {
+    height: 100vh;
+     scroll-behavior: smooth;
+     overflow-y: scroll;
+}
+
 .noise {
     position: fixed;
     z-index: 9999;

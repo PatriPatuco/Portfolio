@@ -80,10 +80,10 @@ function About() {
         </div>
       </article>
 
-      <button className="about__button">
+      <a className="about__button" href="./Patricia-Becerra-Corbacho-CV.pdf" download>
         <i class="fa-solid fa-arrow-down"></i>
         <p>Download CV</p>
-      </button>
+      </a>
     </section>
   );
 }

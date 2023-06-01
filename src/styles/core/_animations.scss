@@ -31,3 +31,22 @@
     transform: translate(-9%,15%);
 }
 }
+
+@keyframes hello {
+    0% {
+       transform: translateX(-3%);
+       opacity: 0%;
+    }
+
+    100% {
+        transform: translate(0)}
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: orange; 
+	}
+}

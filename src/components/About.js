@@ -21,7 +21,7 @@ function About() {
         />
         <p className="regular-text">
           Hey! I'm Patricia, passionate about graphic design and web
-          development.
+          development.</p>
           <p className="regular-text">
             I have been in the design world for over 5 years, but thanks to my
             previous job, I started to be very interested in web development.
@@ -37,7 +37,6 @@ function About() {
             Outside of work, I enjoy my free time playing video games, watching
             some series, and spending time with my friends.
           </p>
-        </p>
       </article>
 
       <article className="about__info">
@@ -81,7 +80,7 @@ function About() {
       </article>
 
       <a className="about__button" href="./Patricia-Becerra-Corbacho-CV.pdf" download>
-        <i class="fa-solid fa-arrow-down"></i>
+        <i className="fa-solid fa-arrow-down"></i>
         <p>Download CV</p>
       </a>
     </section>

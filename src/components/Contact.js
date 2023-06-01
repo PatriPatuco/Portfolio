@@ -20,25 +20,28 @@ function Contact() {
 
       <div className="contact__social">
         <div className="contact__social--item">
-          <a href="mailto:patricia.beco.dg@gmail.com">
+          <a href="mailto:patricia.beco.dg@gmail.com" target="blank">
             <i class="fa-solid fa-square-envelope"></i>
             <p>patricia.beco.dg@gmail.com</p>
           </a>
         </div>
         <div className="contact__social--item">
-          <a href="https://linkedin.com/in/patriciabecerracorbacho/">
+          <a
+            href="https://linkedin.com/in/patriciabecerracorbacho/"
+            target="blank"
+          >
             <i class="fa-brands fa-linkedin"></i>
             <p>linkedin.com/in/patriciabecerracorbacho/</p>
           </a>
         </div>
         <div className="contact__social--item">
-          <a href="https://twitter.com/PatuDev">
+          <a href="https://twitter.com/PatuDev" target="blank">
             <i class="fa-brands fa-square-twitter"></i>
             <p>twitter.com/PatuDev/</p>
           </a>
         </div>
         <div className="contact__social--item">
-          <a href="https://github.com/PatriPatuco">
+          <a href="https://github.com/PatriPatuco" target="blank">
             <i class="fa-brands fa-square-github"></i>
             <p>github.com/PatriPatuco</p>
           </a>

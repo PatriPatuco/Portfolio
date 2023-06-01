@@ -9,18 +9,33 @@
   background-size: cover;
 
   &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: $titles;
     font-size: 5.6rem;
-    text-align: center;
-    padding: 3rem 0;
-  }
+    padding: 3rem 60rem;
+    animation: hello 3s backwards;
+    animation-delay: 100;
+
+      .hidden {
+        border-bottom: 1px solid #fff;
+      }
+    }
 
   &__subtitle {
     font-family: $regular;
     font-size: 3.2rem;
     text-align: center;
     width: 55%;
-    
+    animation: hello 3s forwards;
+  }
+
+  &__span {
+    font-family: $regular;
+    font-size: 5rem;
+    text-align: center;
+    padding: 1rem;
   }
 
   &__nav--menu {
@@ -29,27 +44,14 @@
     flex-direction: row;
 
     &--item {
-        font-family: $titles;
-        font-size: 3.2rem;
-        padding: 0 0.3rem;
+      font-family: $titles;
+      font-size: 3.2rem;
+      padding: 0 0.3rem;
 
-        &--link {
-            text-decoration: none;
-            color: $darkie;
-        }
+      &--link {
+        text-decoration: none;
+        color: $darkie;
+      }
     }
   }
-
-  .hello {
-      animation: hello 4s forwards;
-    }
-
-    .cursor {
-      display: inline-block;
-	vertical-align: middle;
-	width: 3px;
-	height: 50px;
-	background-color: orange;
-	animation: blink .75s step-end infinite;
-    }
 }

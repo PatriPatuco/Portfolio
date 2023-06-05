@@ -1,38 +1,28 @@
-import React, { useEffect } from "react";
 import Typewriter from "typewriter-effect";
 
 const Home = () => {
-  useEffect(() => {
-    const text = document.querySelector(".text");
-    const letters = Array.from(text.querySelectorAll("li"));
-
-    setTimeout(() => {
-      text.classList.remove("hidden");
-      letters[0].classList.add("typing-animation");
-    }, 2000); // Ajusta el tiempo de espera según tus preferencias
-  }, []);
-
   return (
     <section className="home">
       <h3 className="home__subtitle">Hello, world! my name is</h3>
-      <ul className="home__title text hidden">
-        <li className="home__span">&lt;</li>
-        <li>P</li>
-        <li className="ghost">A</li>
-        <li className="ghost">T</li>
-        <li className="ghost">R</li>
-        <li className="ghost">I</li>
-        <li className="ghost">C</li>
-        <li className="ghost">I</li>
-        <li className="ghost">A</li>
-        <li className="spaced">B</li>
-        <li className="ghost">E</li>
-        <li className="ghost">C</li>
-        <li className="ghost">E</li>
-        <li className="ghost">R</li>
-        <li className="ghost">R</li>
-        <li className="ghost">A</li>
-        <li className="home__span spaced">/&gt;</li>
+      <ul className="home__title">
+        <li className="home__title--span ">&lt;</li>
+        <li className="home__title--letter spaced">P</li>
+        <li className="home__title--letter ghost">A</li>
+        <li className="home__title--letter ghost">T</li>
+        <li className="home__title--letter ghost">R</li>
+        <li className="home__title--letter ghost">I</li>
+        <li className="home__title--letter ghost">C</li>
+        <li className="home__title--letter ghost">I</li>
+        <li className="home__title--letter ghost">A</li>
+
+        <li className="home__title--letter spaced">B</li>
+        <li className="home__title--letter ghost">E</li>
+        <li className="home__title--letter ghost">C</li>
+        <li className="home__title--letter ghost">E</li>
+        <li className="home__title--letter ghost">R</li>
+        <li className="home__title--letter ghost">R</li>
+        <li className="home__title--letter ghost">A</li>
+        <li className="home__title--span spaced">/&gt;</li>
       </ul>
       <h3 className="home__subtitle">
         <Typewriter

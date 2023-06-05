@@ -15,27 +15,33 @@
     font-family: $titles;
     font-size: 5.6rem;
     padding: 3rem 60rem;
-    animation: hello 3s backwards;
-    animation-delay: 100;
 
-      .hidden {
-        border-bottom: 1px solid #fff;
-      }
+    &--span {
+      font-family: $regular;
+      font-size: 5rem;
+      text-align: center;
+      padding: 1rem;
     }
+
+    .spaced {
+      padding-left: 1rem;
+      animation: spacing 1.5s ease-out;
+      animation-delay: 2s;
+      animation-fill-mode: backwards;
+    }
+
+    .ghost {
+      animation: slidein 4s cubic-bezier(0.86, 0.06, 0.3, 0.79);
+      animation-delay: 0.5s;
+      animation-fill-mode: backwards;
+    } 
+  }
 
   &__subtitle {
     font-family: $regular;
     font-size: 3.2rem;
     text-align: center;
     width: 55%;
-    animation: hello 3s forwards;
-  }
-
-  &__span {
-    font-family: $regular;
-    font-size: 5rem;
-    text-align: center;
-    padding: 1rem;
   }
 
   &__nav--menu {

@@ -46,19 +46,32 @@ const Home = () => {
         <ul className="home__nav--menu">
           <li className="home__nav--menu--item">
             <a className="home__nav--menu--item--link" href="#work">
-              WORK
+              <span className="home__nav--menu--item--link--span">W</span>
+              <span className="home__nav--menu--item--link--span">O</span>
+              <span className="home__nav--menu--item--link--span">R</span>
+              <span className="home__nav--menu--item--link--span">K</span>
             </a>
             -
           </li>
           <li className="home__nav--menu--item">
             <a className="home__nav--menu--item--link" href="#about">
-              ABOUT
+              <span className="home__nav--menu--item--link--span">A</span>
+              <span className="home__nav--menu--item--link--span">B</span>
+              <span className="home__nav--menu--item--link--span">O</span>
+              <span className="home__nav--menu--item--link--span">U</span>
+              <span className="home__nav--menu--item--link--span">T</span>
             </a>
             -
           </li>
           <li className="home__nav--menu--item">
             <a className="home__nav--menu--item--link" href="#contact">
-              CONTACT
+              <span className="home__nav--menu--item--link--span">C</span>
+              <span className="home__nav--menu--item--link--span">O</span>
+              <span className="home__nav--menu--item--link--span">N</span>
+              <span className="home__nav--menu--item--link--span">T</span>
+              <span className="home__nav--menu--item--link--span">A</span>
+              <span className="home__nav--menu--item--link--span">C</span>
+              <span className="home__nav--menu--item--link--span">T</span>
             </a>
           </li>
         </ul>

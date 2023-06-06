@@ -34,7 +34,7 @@
       animation: slidein 4s cubic-bezier(0.86, 0.06, 0.3, 0.79);
       animation-delay: 0.5s;
       animation-fill-mode: backwards;
-    } 
+    }
   }
 
   &__subtitle {
@@ -57,6 +57,72 @@
       &--link {
         text-decoration: none;
         color: $darkie;
+        cursor: pointer;
+        user-select: none;
+        color: $darkie;
+        font-size: 0;
+        transform: translate3d(0, 0, 0);
+        filter: blur(0);
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+
+        &--span {
+          font-size: 4rem;
+          margin: 0;
+          padding: 0;
+          display: inline-block;
+          position: relative;
+          transition: transform cubic-bezier(0.77, 0, 0.175, 1), 250ms;
+          padding: 0 0.1rem;
+
+          // loop adding delay for each menu words letter effect
+          @for $i from 0 through 3 {
+            &:nth-child(#{$i}n) {
+              transition-delay: 250ms * $i/3;
+            }
+            &:nth-child(#{$i}n)::after {
+              transition-delay: 250ms * $i/3;
+            }
+
+            // letters go to the original position after word hover
+            &::after {
+              content: "";
+              position: absolute;
+              top: 100%;
+              left: -1%;
+              width: 102%;
+              height: 3rem;
+              background: $darkie;
+              transform-origin: top center;
+              transform: scaleY(0.1);
+              transition: transform cubic-bezier(0.77, 0, 0.175, 1), 250ms;
+            }
+          }
+        }
+      }
+
+      // if mouse hover, the word goes up
+      &:hover {
+        span {
+          transform: translateY(-2rem);
+          &::after {
+            transform: scaleY(1);
+          }
+        }
+      }
+      
+      // if click in the word, activate the transition
+      &:active {
+        span {
+          transform: translateY(0);
+          transition: transform cubic-bezier(0.77, 0, 0.175, 1), 250ms/2;
+          transition-delay: 0 !important;
+          &::after {
+            transform: scaleY(0.5);
+            transition: transform cubic-bezier(0.77, 0, 0.175, 1), 250ms/2;
+            transition-delay: 0 !important;
+          }
+        }
       }
     }
   }

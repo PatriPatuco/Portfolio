@@ -3,18 +3,26 @@
   flex-direction: column;
   place-items: center;
   justify-content: center;
+  padding: 0 6rem;
   color: $darkie;
   height: 100vh;
   background-image: url("../../images/hhholographic.webp");
   background-size: cover;
+  @media (min-width: $desktop) {
+  justify-items: flex-start;  
+  }
 
   &__title {
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: $titles;
-    font-size: 5.6rem;
-    padding: 3rem 60rem;
+    font-size: 4rem;
+    padding: 3rem 50rem;
+
+    @media (min-width:$desktop){
+      font-size: 8rem;
+    }
 
     &--span {
       font-family: $regular;
@@ -39,9 +47,13 @@
 
   &__subtitle {
     font-family: $regular;
-    font-size: 3.2rem;
+    font-size: 3rem;
     text-align: center;
-    width: 55%;
+
+    @media (min-width: $desktop) {
+      text-align: left;
+      font-size: 4rem;
+    }
   }
 
   &__nav--menu {
@@ -51,8 +63,8 @@
 
     &--item {
       font-family: $titles;
-      font-size: 3.2rem;
-      padding: 0 0.3rem;
+      font-size: 2rem;
+      padding: 0 0.4rem;
 
       &--link {
         text-decoration: none;
@@ -60,20 +72,23 @@
         cursor: pointer;
         user-select: none;
         color: $darkie;
-        font-size: 0;
         transform: translate3d(0, 0, 0);
         filter: blur(0);
         backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
 
         &--span {
-          font-size: 4rem;
+          font-size: 2rem;
           margin: 0;
           padding: 0;
           display: inline-block;
           position: relative;
           transition: transform cubic-bezier(0.77, 0, 0.175, 1), 250ms;
           padding: 0 0.1rem;
+
+          @media(min-width:$desktop) {
+            font-size: 4rem;
+          }
 
           // loop adding delay for each menu words letter effect
           @for $i from 0 through 3 {
@@ -110,7 +125,7 @@
           }
         }
       }
-      
+
       // if click in the word, activate the transition
       &:active {
         span {

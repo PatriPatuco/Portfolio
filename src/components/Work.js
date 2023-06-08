@@ -43,7 +43,7 @@ function Work() {
         <div className="menu-line"></div>
         <p>Work</p>
       </aside>
-      {renderProjects()}
+      <section className="work__projects-list">{renderProjects()}</section>
     </section>
   );
 }

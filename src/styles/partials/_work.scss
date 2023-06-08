@@ -6,6 +6,12 @@
 
   &__aside {
     padding-bottom: 4rem;
+
+    @media (min-width:$desktop){
+      transform: rotate(-90deg);
+      z-index: -1;
+      width: 10%;
+    }
   }
 
   &__project {

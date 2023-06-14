@@ -4,26 +4,50 @@
   color: $darkie;
 
   @media (min-width: $desktop) {
-    padding: 10rem 0;
+    padding: 10rem 0 0 0;
     display: grid;
-    grid-template-columns: 1fr 50% 1fr;
+    grid-template-columns: 1fr 55% 7%;
     grid-template-rows: 55% 1fr 1fr;
   }
 
   &__aside {
+    // loop to print aside varia
+    @each $prop, $value in $aside {
+      #{$prop}: $value;
+    }
     padding-bottom: 4rem;
-    display: flex;
     justify-content: flex-end;
 
     @media (min-width: $desktop) {
       grid-column: 3;
-      grid-row: 1/3;
+      grid-row: 1/4;
     }
 
     .menu-line {
+      width: 100px;
+      height: 1px;
       background-color: $darkie;
+      margin-left: 1rem;
     }
   }
+
+  &__aside--desktop {
+    @media (min-width: $desktop) {
+      flex-direction: column;
+      padding-bottom: 0;
+
+      p {
+        transform: rotate(-90deg);
+        padding-left: 5rem;
+      }
+
+      .menu-line {
+        width: 1px;
+        height: 400px;
+      }
+    }
+  }
+
   &__img {
     size: 24rem;
     padding-bottom: 3rem;
@@ -43,8 +67,8 @@
       grid-row: 1/3;
 
       p {
-      font-size: 2.4rem;
-    }
+        font-size: 2.4rem;
+      }
     }
   }
 
@@ -62,8 +86,8 @@
       padding-top: 1rem;
 
       @media (min-width: $desktop) {
-      padding-bottom: 2rem;
-    }
+        padding-bottom: 2rem;
+      }
     }
   }
 
@@ -73,7 +97,7 @@
     justify-content: center;
     flex-wrap: wrap;
 
-    @media (min-width:$desktop){
+    @media (min-width: $desktop) {
       flex-wrap: nowrap;
       justify-content: flex-start;
     }
@@ -83,11 +107,11 @@
       padding-right: 1.5rem;
       padding-top: 0.1rem;
 
-      @media (min-width:$desktop) {
+      @media (min-width: $desktop) {
         scale: 1.3;
         padding-left: 2rem;
-      padding-right: 2rem;
-      padding-top: 0.1rem;
+        padding-right: 2rem;
+        padding-top: 0.1rem;
       }
     }
     .kaiju {
@@ -101,24 +125,22 @@
     }
 
     .monografica {
-      @media (min-width:$desktop) {
-      padding: 0 1rem 0 3.3rem;
+      @media (min-width: $desktop) {
+        padding: 0 1rem 0 3.3rem;
       }
     }
 
     .easdm {
-      @media(min-width: $desktop){
+      @media (min-width: $desktop) {
         padding: 0 5rem;
       }
     }
 
     .gestorex {
-      @media (min-width:$desktop) {
+      @media (min-width: $desktop) {
         border-right: 1px $darkie solid;
       }
     }
-
-    
   }
 
   &__button {

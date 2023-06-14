@@ -9,7 +9,7 @@ import EASDM from "../images/EASDM.png";
 function About() {
   return (
     <section className="about" id="about">
-      <aside className="about__aside menu-right">
+      <aside className="about__aside about__aside--desktop">
         <p>About</p>
         <div className="menu-line"></div>
       </aside>

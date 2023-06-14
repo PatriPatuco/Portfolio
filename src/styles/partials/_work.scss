@@ -4,20 +4,50 @@
   background-color: $darkie;
   color: $lightie;
 
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 7% 1fr;
+    grid-template-rows: 1fr;
+    padding: 10rem 0 0 0;
+  }
+
   &__aside {
+    // loop to print aside varia
+    @each $prop, $value in $aside {
+      #{$prop}: $value;
+    }
     padding-bottom: 4rem;
 
-    @media (min-width:$desktop){
-      transform: rotate(-90deg);
-      z-index: -1;
-      width: 10%;
+    .menu-line{
+    width: 100px;
+    height: 1px;
+    background-color: $lightie ;
+    margin-right: 1rem;
+    }
+  }
+
+  &__aside--desktop {
+    @media (min-width: $desktop) {
+      flex-direction: column-reverse;
+      padding-bottom: 0;
+      
+      p{
+        transform: rotate(-90deg);
+        padding-left: 3rem;
+      }
+
+      .menu-line {
+        margin-right: 0;
+        width: 1px;
+        height: 400px;
+      }
     }
   }
 
   &__project {
     padding: 0 4rem;
 
-    @media (min-width:$desktop) {
+    @media (min-width: $desktop) {
       display: grid;
       grid-template-columns: 60% 1fr;
       grid-template-rows: 40% 20% 60%;
@@ -25,10 +55,10 @@
     }
 
     &--link {
-        text-decoration: none;
-        color: $lightie;
+      text-decoration: none;
+      color: $lightie;
 
-        @media (min-width: $desktop) {
+      @media (min-width: $desktop) {
         grid-column: 2;
         grid-row: 1;
       }
@@ -38,8 +68,6 @@
       font-family: $titles;
       font-size: 4rem;
       padding-bottom: 0.7rem;
-
-      
     }
 
     &--languages {

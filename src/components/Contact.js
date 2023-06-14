@@ -1,7 +1,7 @@
 function Contact() {
   return (
     <section className="contact" id="contact">
-      <aside className="contact__aside menu-left">
+      <aside className="contact__aside contact__aside--desktop">
         <div className="menu-line"></div>
         <p>Contact</p>
       </aside>
@@ -22,7 +22,7 @@ function Contact() {
         <div className="contact__social--item">
           <a href="mailto:patricia.beco.dg@gmail.com" target="blank">
             <i class="fa-solid fa-square-envelope"></i>
-            <p>patricia.beco.dg@gmail.com</p>
+            <p className="regular-text">patricia.beco.dg@gmail.com</p>
           </a>
         </div>
         <div className="contact__social--item">
@@ -31,19 +31,19 @@ function Contact() {
             target="blank"
           >
             <i class="fa-brands fa-linkedin"></i>
-            <p>linkedin.com/in/patriciabecerracorbacho/</p>
+            <p className="regular-text">linkedin.com/in/patriciabecerracorbacho/</p>
           </a>
         </div>
         <div className="contact__social--item">
           <a href="https://twitter.com/PatuDev" target="blank">
             <i class="fa-brands fa-square-twitter"></i>
-            <p>twitter.com/PatuDev/</p>
+            <p className="regular-text">twitter.com/PatuDev/</p>
           </a>
         </div>
         <div className="contact__social--item">
           <a href="https://github.com/PatriPatuco" target="blank">
             <i class="fa-brands fa-square-github"></i>
-            <p>github.com/PatriPatuco</p>
+            <p className="regular-text">github.com/PatriPatuco</p>
           </a>
         </div>
       </div>

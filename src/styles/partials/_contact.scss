@@ -3,8 +3,44 @@
   background-color: $darkie;
   color: $lightie;
 
+  @media (min-width:$desktop) {
+    display: grid;
+    grid-template-columns: 7% 50% 50%;
+    grid-template-rows: 1fr;
+    padding: 10rem 0 0 0;
+  }
+
   &__aside {
+    // loop to print aside varia
+    @each $prop, $value in $aside {
+      #{$prop}: $value;
+    }
     padding-bottom: 4rem;
+
+    .menu-line{
+    width: 100px;
+    height: 1px;
+    background-color: $lightie ;
+    margin-right: 1rem;
+    }
+  }
+
+   &__aside--desktop {
+    @media (min-width: $desktop) {
+      flex-direction: column-reverse;
+      padding-bottom: 0;
+      
+      p{
+        transform: rotate(-90deg);
+        padding-left: 7rem;
+      }
+
+      .menu-line {
+        margin-right: 0;
+        width: 1px;
+        height: 400px;
+      }
+    }
   }
 
   &__info {
@@ -15,6 +51,10 @@
       font-size: 6rem;
       padding-bottom: 4rem;
     }
+
+    @media (min-width:$desktop) {
+      grid-column: 2;
+    }
   }
 
   &__social {
@@ -23,16 +63,45 @@
     align-items: center;
     text-align: center;
 
+    @media (min-width:$desktop) {
+      grid-column: 3;
+      text-align: left;
+      align-items: flex-start;
+      margin-left: 20rem;
+      
+
+      &--item{
+       margin-bottom: 3rem;
+      }
+      .regular-text{
+        text-align: left;
+        display: inline;
+        padding-left: 2rem;
+        padding-bottom: 0rem;
+      }
+    }
+
     & a {
       color: $lightie;
       font-size: 1.4rem;
       font-family: $regular;
       text-decoration: none;
+
+      @media (min-width:$desktop){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     .fa-brands, .fa-solid {
         font-size: 2rem;
         padding: 2rem 0 0.4rem 0;
+
+        @media (min-width:$desktop) {
+          font-size: 3rem;
+          padding: 0;
+        }
     }
   }
 }

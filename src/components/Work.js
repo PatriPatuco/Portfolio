@@ -39,7 +39,7 @@ function Work() {
 
   return (
     <section className="work" id="work">
-      <aside className="work__aside menu-left">
+      <aside className="work__aside work__aside--desktop">
         <div className="menu-line"></div>
         <p>Work</p>
       </aside>

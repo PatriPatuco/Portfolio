@@ -27,30 +27,13 @@
      pointer-events: none;
 }
 
-.menu-left {
-    font-family: $regular;
-    font-size: 3.2rem;
-    display: flex;
-    align-items: center;
-    color: $lightie;
-}
-
-.menu-right {
-    font-family: $regular;
-    font-size: 3.2rem;
-    display: flex;
-    align-items: center;
-    color: $darkie;
-}
-
-.menu-line{
-    width: 100px;
-    height: 1px;
-    background-color: $lightie ;
-}
 
 .regular-text {
     font-family: $regular;
     font-size: 1.6rem;
     padding-bottom: 2rem;
+
+    @media (min-width:$desktop) {
+        font-size: 2.4rem;
+    }
 }  

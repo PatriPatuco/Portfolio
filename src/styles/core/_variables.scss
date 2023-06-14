@@ -7,6 +7,14 @@ $darkie: #302B3F;
 $lightie: #C3DBE7;
 $white: #F5F5F5;
 
+// Aside styles
+$aside: (
+    font-family: $regular,
+    font-size: 3.2rem,
+    display: flex,
+    align-items: center
+);
+
 // Queries
 $desktop: 1024px;
 $tablet: 768px;

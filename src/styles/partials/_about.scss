@@ -49,10 +49,14 @@
   }
 
   &__img {
-    size: 24rem;
+    height: 24rem;
     padding-bottom: 3rem;
+    display: block;
+    margin: 0 auto;
+
 
     @media (min-width: $desktop) {
+      margin: inherit;
       grid-column: 1;
     grid-row: 1;
     padding-left: 14rem;

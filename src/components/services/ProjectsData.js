@@ -8,9 +8,9 @@ const projects = [
   },
   {
     id: 2,
-    name: "Proyectos Canelo",
-    link: "https://proyecto-canelo.onrender.com/",
-    languages: "React - SCSS - HTML - MySQL",
+    name: "Projectlab",
+    link: "https://projectlab.onrender.com",
+    languages: "React - SCSS - Express.JS - MySQL",
     info: "Create your own project card and share it everywhere. If you want to test it, you just need to fill out the form and click 'Create card' and it will generate your personal URL link with all the information. You can also reset the form or check it on the main page with the rest of the projects in the database.",
   },
   {

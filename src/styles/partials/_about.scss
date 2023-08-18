@@ -6,7 +6,7 @@
   @media (min-width: $desktop) {
     padding: 10rem 0 0 0;
     display: grid;
-    grid-template-columns: 1fr 55% 7%;
+    grid-template-columns: 44% 49% 7%;
     grid-template-rows: 55% 1fr 1fr;
   }
 
@@ -49,11 +49,17 @@
   }
 
   &__img {
-    size: 24rem;
+    height: 24rem;
     padding-bottom: 3rem;
+    display: block;
+    margin: 0 auto;
+
 
     @media (min-width: $desktop) {
-      padding-left: 20rem;
+      margin: inherit;
+      grid-column: 1;
+    grid-row: 1;
+    padding-left: 14rem;
     }
   }
 
@@ -79,7 +85,9 @@
 
     @media (min-width: $desktop) {
       font-size: 2.6rem;
-      padding-left: 20rem;
+      grid-column: 1;
+     grid-row: 2;
+      padding-left: 14rem;
     }
 
     &--title {
@@ -163,8 +171,7 @@
       height: 4rem;
       font-size: 3rem;
       width: 17rem;
-      margin: inherit;
-      margin-left: 6rem;
+      margin: 5rem;
     }
 
     .fa-solid {

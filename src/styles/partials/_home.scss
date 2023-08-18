@@ -9,6 +9,7 @@
   background-image: url("../../images/hhholographic.webp");
   background-size: cover;
   @media (min-width: $desktop) {
+    padding: 0 3rem;
   justify-items: flex-start;  
   }
 
@@ -17,8 +18,8 @@
     align-items: center;
     justify-content: center;
     font-family: $titles;
-    font-size: 4rem;
-    padding: 3rem 50rem;
+    font-size: 3.8rem;
+    
 
     @media (min-width:$desktop){
       font-size: 8rem;
